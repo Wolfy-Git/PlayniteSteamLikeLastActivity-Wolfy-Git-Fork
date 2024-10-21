@@ -45,7 +45,7 @@ namespace SteamLikeLastActivity
 
         public override IEnumerable<MainMenuItem> GetMainMenuItems(GetMainMenuItemsArgs args) => _mainMenuItems;
 
-        private void UpdateLastActivity(IEnumerable<Game> gamesToUpdate, bool isBuffered = false)
+        /*private void UpdateLastActivity(IEnumerable<Game> gamesToUpdate, bool isBuffered = false)
         {
             if (!isBuffered) PlayniteApi.Database.Games.BeginBufferUpdate();
 
@@ -64,7 +64,7 @@ namespace SteamLikeLastActivity
             }
 
             if (!isBuffered) PlayniteApi.Database.Games.EndBufferUpdate();
-        }
+        }*/
 
         // public override void OnGameInstalled(Game game)
         // {
